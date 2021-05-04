@@ -6,7 +6,7 @@ class Items extends Component {
 
     this.state = {
       edit: false,
-      url: ""
+      rank: "",
     };
   }
 
@@ -14,43 +14,68 @@ class Items extends Component {
     this.setState({ edit: !this.state.edit });
   };
 
-  handleURL = (value) => {
-    this.setState({
-      url: value,
-    });
+  handleRank = (value) => {
+    if (
+      value === "S" ||
+      value === "s" ||
+      value === "A" ||
+      value === "a" ||
+      value === "B" ||
+      value === "b" ||
+      value === "C" ||
+      value === "c" ||
+      value === "D" ||
+      value === "d" ||
+      value === "F" ||
+      value === "f"
+    ) {
+      this.setState({
+        rank: value,
+      });
+    } else {
+      alert("Rank must be S,A,B,C,D or F! Lowercase characters are accepted");
+    }
   };
 
   handleupdateItem = () => {
-      this.props.updateItem(this.props.item.id, this.state.url)
-      this.toggleEdit()
-      this.setState({url: ''})
-  }
+    this.props.updateItem(this.props.item.id, this.state.rank);
+    this.toggleEdit();
+    this.setState({ rank: "" });
+  };
 
   render() {
     return this.state.edit ? (
-      <div>
+      <div className='itembox'>
         <input
-          placeholder="Enter your new image URL"
-          value={this.state.url}
+          placeholder="Enter rank here"
+          value={this.state.rank}
+          size="9"
+          maxlength="1"
+          title="Rank S,A,B,C,D or F"
           onChange={(e) => {
-            this.handleURL(e.target.value);
+            this.handleRank(e.target.value);
           }}
         />
+        <button onClick={this.handleupdateItem}>Rank</button>
+        <br />
+        <img src={this.props.item.url} alt={this.props.item.title} />
+
         <br />
         {this.props.item.title}
-        <br/>
-        <button onClick={this.handleupdateItem}>Update</button>
+        <br />
       </div>
     ) : (
-      <div>
-        <img src={this.props.item.url} />
-        <br />
-        {this.props.item.title}
-        <br />
+      <div className='itembox'>
         <button onClick={() => this.props.deleteItem(this.props.item.id)}>
           -
         </button>
-        <button onClick={this.toggleEdit}>Edit</button>
+
+        <button onClick={this.toggleEdit}>Rank</button>
+        <br />
+        <img src={this.props.item.url} alt={this.props.item.title} />
+        <br />
+        {this.props.item.title}
+        <br />
       </div>
     );
   }

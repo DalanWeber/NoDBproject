@@ -10,22 +10,31 @@ class ItemList extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="itemscontainer">
-        <div className="items">
-          {this.props.items.map((item) => {
-            return (
-              <Items
-                item={item}
-                deleteItem={this.props.deleteItem}
-                updateItem={this.props.updateItem}
-              />
-            );
-          })}
+        <div className="items" key={this.props.items.id}>
+          {this.props.items
+            .filter((item) => item.rank === "unranked")
+            .map((item) => {
+              return (
+                <Items
+                  key={this.props.items.id}
+                  item={item}
+                  deleteItem={this.props.deleteItem}
+                  updateItem={this.props.updateItem}
+                />
+              );
+            })}
         </div>
         <div className="additem">
-          <AddItem className="additem" createItem={this.props.createItem} />
+          <AddItem
+            className="additem"
+            createItem={this.props.createItem}
+            gameItems={this.props.gameItems}
+            movieItems={this.props.movieItems}
+            bookItems={this.props.bookItems}
+            customItems={this.props.customItems}
+          />
         </div>
       </div>
     );

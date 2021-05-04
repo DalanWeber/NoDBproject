@@ -1,127 +1,159 @@
 .App {
   text-align: center;
+  justify-content: center;
+  color: snow;
+font-family: 'Montserrat', sans-serif;
 }
 
 .header{
-  min-height: 100px;
-  background-color: steelblue;
+  min-height: 75px;
+  background-color: lightskyblue;
+  font-family:'Roboto',sans-serif;
+  text-align: center;
+  justify-content: center;
 }
 .title{
-  font-size: xx-large;  
+  font-size: xx-large;
+  align-content: center;
+  justify-content: center; 
+  position: relative;
+  top: 5px; 
+  font-family: 'Lobster', cursive;
+}
+.Tiers{
+  border: solid black 1px;
 }
 .S{
-  min-height: 100px;
-  border: solid black 1px;
+  min-height: 75px;
+  /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .sTier{
-  background-color: salmon;
-}
-
-.Sbucket{
-
+  background-color: rgb(75, 75, 255);
 }
 
 .A{
-  min-height: 100px;
-  border: solid black 1px;
-  border-bottom: 0px;
+  min-height: 75px;
+  /* border: solid black 1px; */
+  /* border-bottom: 0px; */
 }
 
 .aTier{
-  background-color: rgb(255, 191, 127);
-}
-
-.Abucket{
-
+  background-color: rgb(75, 75, 200);
 }
 
 .B{
-  min-height: 100px;
-  border: solid black 1px;
+  min-height: 75px;
+  /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .bTier{
-  background-color: rgb(255, 223, 127);
-}
-
-.Bbucket{
-
+  background-color: rgb(75, 75, 150);
 }
 
 .C{
-  min-height: 100px;
-  border: solid black 1px;
+  min-height: 75px;
+  /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .cTier{
-  background-color: rgb(255,255,127);
-}
-
-.Cbucket{
-
+  background-color: rgb(75,75,125);
 }
 
 .D{
-  min-height: 100px;
-  border: solid black 1px;
+  min-height: 75px;
+  /* border: solid black 1px; */
   border-bottom: 0px;
 }
 .dTier{
-  background-color: rgb(191,255,127);
-}
-
-.Dbucket{
-
+  background-color: rgb(75,75,100);
 }
 
 .F{
-  min-height: 100px;
-  border: solid black 1px;
+  min-height: 75px;
+  /* border: solid black 1px; */
 }
 
 .fTier{
-  background-color: rgb(127,255,127);
-}
-
-.Fbucket{
-  background-color: lightslategrey;
+  background-color: rgb(75,75,75);
 }
 
 img{
   max-width: 200px;
   min-height: 75px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .itemsfunction{
-  display: flex;
+  background-color: lightskyblue;
 }
 
 .itemscontainer{
   display: flex;
   padding: 10px;
-  max-width: 99vw;
+  max-width: 100vw;
   box-sizing: border-box;
-  margin: 5px;
+  background-color: lightskyblue;
 }
 
 .items{
   display: flex;
   flex-wrap: wrap;
-  border-right: solid 1px blue;
+  border-right: solid 1px steelblue;
   flex-grow: 3;
   width: 74vw - 10px;
   justify-content: space-around;
   box-sizing: border-box;
   margin: 20px;
+  min-width: 74vw - 10px;
 }
 
 .additem{
   padding: 5px;
   flex-grow: 1;
   width: 25vw;
+}
+
+.bucket{
+  display: flex;
+  height: fit-content;
+  padding: 10px;
+  min-height: 50px;
+  background-color: lightslategray;
+}
+
+button {
+  border-radius: 3em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-size: medium;
+  color:#FFFFFF;
+  background-color:slateblue;
+  text-align:center;
+  margin: 2px;
+}
+h2{
+  background-color: lightskyblue;
+  height: fit-content;
+  margin: 0;
+}
+
+input{
+  color: black;
+}
+
+.version{
+  align-content: center;
+  justify-content: center; 
+  position: relative;
+  color: rgb(75,75,125);
+  font-family: fantasy;
+}
+
+.itembox{
+  margin: 5px;
 }

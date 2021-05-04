@@ -10,14 +10,14 @@ class AddItem extends Component {
     };
   }
   handleTitle = (value) => {
-      this.setState({
-        title: value
-      })
+    this.setState({
+      title: value,
+    });
   };
   handleURL = (value) => {
-      this.setState({
-          url: value
-      })
+    this.setState({
+      url: value,
+    });
   };
 
   handleAdd = () => {
@@ -31,21 +31,37 @@ class AddItem extends Component {
     return (
       <div>
         <h3>Add Item</h3>
-        <strong>Title:</strong><br/>
+        <strong>Title:</strong>
+        <br />
         <input
           value={this.state.title}
           onChange={(e) => this.handleTitle(e.target.value)}
           placeholder="Enter your game title here"
+          size="18"
         />
         <br />
-        <strong>Image URL:</strong><br/>
+        <strong>Image URL:</strong>
+        <br />
         <input
           value={this.state.url}
           onChange={(e) => this.handleURL(e.target.value)}
           placeholder="Enter your Image URL here"
+          size="19"
         />
         <br />
         <button onClick={this.handleAdd}>+</button>
+        <br />
+        <br />
+        <br />
+        <h3>Lists:</h3>
+        <button onClick={this.props.gameItems}>Games</button>
+        <br />
+        <button onClick={this.props.movieItems}>Movies</button>
+        <br />
+        <button onClick={this.props.bookItems}>Books</button>
+        <br />
+        <button onClick={this.props.customItems}>Custom</button>
+        <br />
       </div>
     );
   }
