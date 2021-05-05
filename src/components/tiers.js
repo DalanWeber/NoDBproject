@@ -258,15 +258,7 @@ class Tiers extends Component {
         </div>
         <div className="itemsfunction">
           <br />
-          <div>
-            {/* <button onClick={this.gameItems}>Games</button>
-          <button onClick={this.movieItems}>Movies</button>
-          <button onClick={this.bookItems}>Books</button>
-          <button onClick={this.customItems}>Custom</button> */}
-          </div>
-          <br />
           <h2>Items:</h2>
-
           <div>
             <ItemList
               items={this.state.items}

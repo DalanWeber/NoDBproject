@@ -44,8 +44,9 @@ class Items extends Component {
   };
 
   render() {
+    
     return this.state.edit ? (
-      <div className='itembox'>
+      <div className="itembox">
         <input
           placeholder="Enter rank here"
           value={this.state.rank}
@@ -59,17 +60,15 @@ class Items extends Component {
         <button onClick={this.handleupdateItem}>Rank</button>
         <br />
         <img src={this.props.item.url} alt={this.props.item.title} />
-
         <br />
         {this.props.item.title}
         <br />
       </div>
     ) : (
-      <div className='itembox'>
+      <div className="itembox">
         <button onClick={() => this.props.deleteItem(this.props.item.id)}>
           -
         </button>
-
         <button onClick={this.toggleEdit}>Rank</button>
         <br />
         <img src={this.props.item.url} alt={this.props.item.title} />

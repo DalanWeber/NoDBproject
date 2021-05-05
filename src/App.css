@@ -2,15 +2,18 @@
   text-align: center;
   justify-content: center;
   color: snow;
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4D1BAQF6b3GCzBuzhg/company-background_10000/0/1533749767196?e=2159024400&v=beta&t=kiu9uLpKp0_fhNFosu9Z9vY8UaVHhYCvitPlp0KlMfg');
+
 }
 
 .header{
   min-height: 75px;
-  background-color: lightskyblue;
+  background-color: rgba(135, 206, 250, 0.5);
   font-family:'Roboto',sans-serif;
   text-align: center;
   justify-content: center;
+  padding: 1px;
 }
 .title{
   font-size: xx-large;
@@ -21,82 +24,83 @@ font-family: 'Montserrat', sans-serif;
   font-family: 'Lobster', cursive;
 }
 .Tiers{
-  border: solid black 1px;
+
 }
 .S{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .sTier{
-  background-color: rgb(75, 75, 255);
+  background-color: rgb(60, 60, 255);
 }
 
 .A{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
   /* border-bottom: 0px; */
 }
 
 .aTier{
-  background-color: rgb(75, 75, 200);
+  background-color: rgb(60, 60, 200);
 }
 
 .B{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .bTier{
-  background-color: rgb(75, 75, 150);
+  background-color: rgb(60, 60, 150);
 }
 
 .C{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
   border-bottom: 0px;
 }
 
 .cTier{
-  background-color: rgb(75,75,125);
+  background-color: rgb(60,60,125);
 }
 
 .D{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
   border-bottom: 0px;
 }
 .dTier{
-  background-color: rgb(75,75,100);
+  background-color: rgb(60,60,100);
 }
 
 .F{
-  min-height: 75px;
+  min-height: 60px;
   /* border: solid black 1px; */
 }
 
 .fTier{
-  background-color: rgb(75,75,75);
+  background-color: rgb(60,60,60);
 }
 
 img{
-  max-width: 200px;
-  min-height: 75px;
+  max-width: 150px;
+  min-height: 60px;
   margin: 2px;
+  border-right: solid whitesmoke 2px;
+  border-bottom: solid whitesmoke 1px;
 }
 
 .itemsfunction{
-  background-color: lightskyblue;
+  background-color: rgba(135, 206, 250, 0.99);
 }
 
 .itemscontainer{
   display: flex;
-  padding: 10px;
   max-width: 100vw;
   box-sizing: border-box;
-  background-color: lightskyblue;
+
 }
 
 .items{
@@ -119,10 +123,11 @@ img{
 
 .bucket{
   display: flex;
+  flex-wrap: wrap;
   height: fit-content;
   padding: 10px;
   min-height: 50px;
-  background-color: lightslategray;
+  background-color: hsla(210, 14%, 53%, 0.5);
 }
 
 button {
@@ -137,9 +142,9 @@ button {
   margin: 2px;
 }
 h2{
-  background-color: lightskyblue;
+  
   height: fit-content;
-  margin: 0;
+  
 }
 
 input{
@@ -150,10 +155,14 @@ input{
   align-content: center;
   justify-content: center; 
   position: relative;
-  color: rgb(75,75,125);
+  color: rgb(60,60,125);
   font-family: fantasy;
 }
 
 .itembox{
-  margin: 5px;
+  margin: px;
+}
+
+.h3{
+
 }

@@ -13,7 +13,7 @@ class Header extends Component{
     render(){
         return (
             <div className='header'>
-                <div className='title'>JankRanker</div>
+                <div className='title'>TierRanker</div>
                 <div className='version'>Version 1.0</div>
             </div>
         )

@@ -40,6 +40,7 @@ class AddItem extends Component {
           size="18"
         />
         <br />
+        <br />
         <strong>Image URL:</strong>
         <br />
         <input
@@ -51,8 +52,7 @@ class AddItem extends Component {
         <br />
         <button onClick={this.handleAdd}>+</button>
         <br />
-        <br />
-        <br />
+
         <h3>Lists:</h3>
         <button onClick={this.props.gameItems}>Games</button>
         <br />
